@@ -1,0 +1,75 @@
+
+<style>
+/* App bakgrunn og generell font */
+body, .main, .block-container {
+    background-color: #f8f9fa !important;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Sidebar */
+.css-1d391kg { 
+    background-color: #ffffff !important;
+    border-right: 1px solid #dee2e6;
+}
+
+/* Tittel og overskrifter */
+h1, h2, h3, h4 {
+    color: #1f2937;
+}
+
+/* Info-meldinger */
+.stAlert > div {
+    background-color: #e3f2fd;
+    color: #0d47a1;
+    border-left: 4px solid #2196f3;
+}
+
+/* Feilmeldinger */
+div.stAlert[data-baseweb="notification"][role="alert"] {
+    background-color: #ffebee;
+    color: #b71c1c;
+    border-left: 4px solid #f44336;
+}
+
+/* Suksess */
+div.stAlert[data-baseweb="notification"][data-testid="stNotificationSuccess"] {
+    background-color: #e8f5e9;
+    color: #1b5e20;
+    border-left: 4px solid #4caf50;
+}
+
+/* Knapper */
+.stButton > button {
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+}
+
+.stButton > button:hover {
+    background-color: #357ab7;
+    transition: background-color 0.3s;
+}
+
+/* Inputfelt */
+.stTextInput > div > input,
+.stNumberInput > div > input {
+    border: 1px solid #ced4da;
+    padding: 0.5rem;
+    border-radius: 4px;
+}
+
+/* Sidebar inputfelt */
+.sidebar .stTextInput > div > input {
+    background-color: #f1f3f5;
+}
+
+/* Tabbing av utvidbare seksjoner */
+.stExpanderHeader {
+    background-color: #f1f3f5;
+    padding: 0.75rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+</style>

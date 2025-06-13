@@ -1,0 +1,5 @@
+market,price,fee,effective_price,volume,cost
+NIO_sell_lvl_5,0.4,0.001,0.4004,440,176.176
+NIO_sell_lvl_4,0.3,0.001,0.30029999999999996,158,47.447399999999995
+NIO_sell_lvl_3,0.2,0.001,0.2002,302,60.4604
+NIO_sell_lvl_2,0.1,0.001,0.1001,100,10.01

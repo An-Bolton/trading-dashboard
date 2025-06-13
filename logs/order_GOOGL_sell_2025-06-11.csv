@@ -1,0 +1,4 @@
+market,price,fee,effective_price,volume,cost
+GOOGL_sell_lvl_5,0.4,0.001,0.4004,456,182.58239999999998
+GOOGL_sell_lvl_4,0.3,0.001,0.30029999999999996,485,145.64549999999997
+GOOGL_sell_lvl_3,0.2,0.001,0.2002,59,11.8118

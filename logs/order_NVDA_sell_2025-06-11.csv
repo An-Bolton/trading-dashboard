@@ -1,0 +1,6 @@
+market,price,fee,effective_price,volume,cost
+NVDA_sell_lvl_5,0.4,0.001,0.4004,320,128.128
+NVDA_sell_lvl_4,0.3,0.001,0.30029999999999996,221,66.3663
+NVDA_sell_lvl_3,0.2,0.001,0.2002,106,21.2212
+NVDA_sell_lvl_2,0.1,0.001,0.1001,229,22.9229
+NVDA_sell_lvl_1,0.0,0.001,0.0,124,0.0

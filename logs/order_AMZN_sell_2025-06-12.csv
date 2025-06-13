@@ -1,0 +1,5 @@
+market,price,fee,effective_price,volume,cost
+AMZN_sell_lvl_5,0.4,0.001,0.4004,431,172.5724
+AMZN_sell_lvl_4,0.3,0.001,0.30029999999999996,301,90.39029999999998
+AMZN_sell_lvl_3,0.2,0.001,0.2002,263,52.6526
+AMZN_sell_lvl_2,0.1,0.001,0.1001,5,0.5005

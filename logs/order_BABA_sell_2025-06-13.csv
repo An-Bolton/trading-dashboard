@@ -1,0 +1,4 @@
+market,price,fee,effective_price,volume,cost
+BABA_sell_lvl_5,0.4,0.001,0.4004,188,75.2752
+BABA_sell_lvl_4,0.3,0.001,0.30029999999999996,466,139.9398
+BABA_sell_lvl_3,0.2,0.001,0.2002,346,69.2692

@@ -1,0 +1,5 @@
+market,price,fee,effective_price,volume,cost
+MSFT_sell_lvl_5,0.4,0.001,0.4004,241,96.4964
+MSFT_sell_lvl_4,0.3,0.001,0.30029999999999996,399,119.81969999999998
+MSFT_sell_lvl_3,0.2,0.001,0.2002,357,71.4714
+MSFT_sell_lvl_2,0.1,0.001,0.1001,3,0.3003

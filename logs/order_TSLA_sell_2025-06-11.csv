@@ -1,0 +1,4 @@
+market,price,fee,effective_price,volume,cost
+TSLA_sell_lvl_5,0.4,0.001,0.4004,420,168.16799999999998
+TSLA_sell_lvl_4,0.3,0.001,0.30029999999999996,418,125.52539999999998
+TSLA_sell_lvl_3,0.2,0.001,0.2002,162,32.4324
