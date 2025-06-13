@@ -531,23 +531,52 @@ with st.expander("📉 Portefølje og Sharpe", expanded=True):
             for p in positions:
                 symbol = p.symbol
                 qty = float(p.qty)
+                avg_price = float(p.avg_entry_price)
                 current_price = api.get_latest_trade(symbol).price
                 market_value = qty * current_price
+                unrealized_pl = (current_price - avg_price) * qty
                 total_value += market_value
 
                 rows.append({
                     "Ticker": symbol,
                     "Antall": qty,
-                    "Pris nå": f"${current_price:.2f}",
-                    "Verdi": f"${market_value:,.2f}"
+                    "Kjøpspris": avg_price,
+                    "Pris nå": current_price,
+                    "Verdi": market_value,
+                    "Gevinst/Tap": unrealized_pl
                 })
+
+            if rows:
+                df = pd.DataFrame(rows)
+
+                # Format og fargelegg gevinst/tap
+                def highlight_pl(val):
+                    color = "green" if val > 0 else "red" if val < 0 else "black"
+                    return f"color: {color}; font-weight: bold"
+
+
+                styled_df = df.style \
+                    .format({
+                    "Kjøpspris": "${:,.2f}",
+                    "Pris nå": "${:,.2f}",
+                    "Verdi": "${:,.2f}",
+                    "Gevinst/Tap": "${:,.2f}"
+                }) \
+                    .applymap(highlight_pl, subset=["Gevinst/Tap"])
+
+                st.write("📊 Nåverdi og P&L i porteføljen:")
+                st.dataframe(styled_df, use_container_width=True)
+                st.metric("💼 Total porteføljeverdi", f"${total_value:,.2f}")
+            else:
+                st.info("Ingen åpne posisjoner.")
+        except Exception as e:
+            st.error(f"Kunne ikke hente porteføljeverdi: {e}")
 
             if rows:
                 st.dataframe(pd.DataFrame(rows))
                 st.metric("💼 Total porteføljeverdi", f"${total_value:,.2f}")
             else:
                 st.info("Ingen åpne posisjoner.")
-
         except Exception as e:
             st.error(f"Kunne ikke hente porteføljeverdi: {e}")
 
