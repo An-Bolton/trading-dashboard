@@ -7,14 +7,13 @@ import os
 import subprocess
 import time
 from datetime import datetime
-from streamlit_autorefresh import st_autorefresh
+
 
 DB_PATH = "orders.db"
 ALPACA_API_KEY = "YOUR_ALPACA_API_KEY"
 ALPACA_SECRET_KEY = "YOUR_ALPACA_SECRET_KEY"
 ALPACA_BASE_URL = "https://paper-api.alpaca.markets"
 
-api = tradeapi.REST(ALPACA_API_KEY, ALPACA_SECRET_KEY, base_url=ALPACA_BASE_URL)
 
 st.set_page_config(page_title="Smart Order Router Dashboard", layout="wide")
 st.title("📊 Smart Order Router Dashboard")
