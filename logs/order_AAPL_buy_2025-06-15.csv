@@ -1,0 +1,4 @@
+market,price,fee,effective_price,volume,cost
+AAPL_buy_lvl_5,196.05,0.001,196.24605,449,88114.47645
+AAPL_buy_lvl_4,196.15,0.001,196.34615,410,80501.9215
+AAPL_buy_lvl_3,196.25,0.001,196.44625,141,27698.92125

@@ -1,0 +1,5 @@
+market,price,fee,effective_price,volume,cost
+SHOP_sell_lvl_5,0.4,0.001,0.4004,127,50.8508
+SHOP_sell_lvl_4,0.3,0.001,0.30029999999999996,284,85.28519999999999
+SHOP_sell_lvl_3,0.2,0.001,0.2002,448,89.6896
+SHOP_sell_lvl_2,0.1,0.001,0.1001,141,14.114099999999999
