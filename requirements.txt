@@ -7,3 +7,4 @@ plotly>=5.20
 alpaca-py>=0.22
 fpdf2>=2.7
 openpyxl>=3.1
+mplfinance>=0.12.10b0
