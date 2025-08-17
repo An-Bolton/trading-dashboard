@@ -6,7 +6,6 @@ import sqlite3
 import os
 import subprocess
 import time
-import alpaca_trade_api as tradeapi
 from datetime import datetime
 from streamlit_autorefresh import st_autorefresh
 

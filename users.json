@@ -1,0 +1,6 @@
+{
+    "testbruker@example.com": {
+        "name": "Test Bruker",
+        "password": "$2b$12$V7p5MXQ5HPqDFVM9GrXwhuV8QBrgeKXwZ8qrYtUTw7mNInzybIjxy"
+    }
+}
