@@ -9,3 +9,4 @@ alpaca-py>=0.22
 scikit-learn>=1.4
 fpdf2>=2.7
 openpyxl>=3.1
+finnhub-python>=2.4
