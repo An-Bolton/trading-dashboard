@@ -258,10 +258,34 @@ def get_orders(trading_client):
         return []
 
 # ---------------- MAIN ----------------
+
 def main():
     login()
     show_logo()
     trading_client = get_trading_client()
+
+    # -> Jeg legger denne rett før jeg kaller st.tabs([...])
+    st.markdown("""
+    <style>
+    /* gjør faner horisontalt scrollbare på små skjermer */
+    .stTabs [data-baseweb="tab-list"]{
+      display:flex; flex-wrap:nowrap; overflow-x:auto; scrollbar-width:thin; gap:.4rem;
+    }
+    .stTabs [data-baseweb="tab"]{
+      flex:0 0 auto; white-space:nowrap;
+    }
+
+    /* litt tettere layout og mindre tekst på mobil */
+    @media (max-width: 640px){
+      .stTabs [data-baseweb="tab"] button { padding:6px 10px !important; }
+      .stTabs [data-baseweb="tab"] p { font-size:0.9rem !important; }
+    }
+
+    /* skjul stygge scrollbars i WebKit */
+    .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar { height:6px; }
+    .stTabs [data-baseweb="tab-list"]::-webkit-scrollbar-thumb { background:#ddd; border-radius:4px; }
+    </style>
+    """, unsafe_allow_html=True)
 
     tab1, tab2, tab3, tab4, tab5, tab6, tab7, tab8, tab9, tab10, tab11, tab12, tab13 = st.tabs([
         "Portefølje", "Handler", "Teknisk Analyse", "Tradingbot",
